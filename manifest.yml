@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: webhook-php-example
+  host: webhook-php-example
+  disk_quota: 1024M
+  services:
+  - SendGrid-r2
+  buildpack: php_buildpack
