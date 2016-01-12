@@ -20,7 +20,7 @@ Webサーバのhtdocs上に配置します。
 http://%Webアプリケーションのホスト名%/EventReceiver.php
 1. SELECT ACTIONSで受信したいイベントのチェックをONにします。
 1. 「Test Your Integration」ボタンを選択してイベントがWebアプリケーションにPOSTされることを確認します。
-1. SendGrid経由で[送信](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)したメールの各イベントがアプリケーションにPOSTされることを確認します。
+1. SendGrid経由で[送信](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)したメールの各イベントがアプリケーションにPOSTされることを確認します。(phpファイルと同一階層のevent.logというファイルに出力されます)
 
 ## Parse Webhook
 1. Webポータルで[SETTINGS > Inbound Parse](https://app.sendgrid.com/settings/parse)を開きます。
@@ -30,4 +30,4 @@ http://%Webアプリケーションのホスト名%/EventReceiver.php
   1. SPAM CHECK：OFF
   1. SEND RAW：OFF
 1. 「Save」ボタンを選択して保存します。
-1. HOSTNAMEに設定したドメインの任意のメールアドレス宛にメールを送信して、受信したメールの内容がWebアプリケーションにPOSTされることを確認します。
+1. HOSTNAMEに設定したドメインの任意のメールアドレス宛にメールを送信して、受信したメールの内容がWebアプリケーションにPOSTされることを確認します。(phpファイルと同一階層のparse.logというファイルに出力されます)
